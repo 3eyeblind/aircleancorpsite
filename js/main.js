@@ -29,7 +29,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     // Account for sticky navbar + top bar height
     const offset = document.querySelector('.top-bar')
       ? document.querySelector('.top-bar').offsetHeight +
-        document.querySelector('.navbar').offsetHeight
+      document.querySelector('.navbar').offsetHeight
       : 80;
 
     const top = target.getBoundingClientRect().top + window.scrollY - offset;
